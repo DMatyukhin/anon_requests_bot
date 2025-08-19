@@ -15,8 +15,8 @@
 
 Структура проекта
 -----------------
-anon_bot/
-│── anon_requests_bot.py           # Основной код бота
+anon_requests_bot/
+│── bot_inline.py           # Основной код бота
 │── requirements.txt # Зависимости
 │── .env             # Переменные окружения (создать вручную)
 
@@ -43,7 +43,7 @@ anon_bot/
    - ADMIN_ID — ваш Telegram ID (узнать через @userinfobot)
 
 5. Запустить бота:
-   python anon_requests_bot.py
+   python bot_inline.py
 
 Запуск на сервере (Ubuntu)
 --------------------------
@@ -56,10 +56,10 @@ anon_bot/
 3. Клонируйте проект и установите зависимости (как выше).
 
 4. Запустите бота:
-   python anon_requests_bot.py
+   python bot_inline.py
 
 5. Чтобы бот работал после выхода из SSH, используйте:
-   nohup python anon_requests_bot.py &
+   nohup python bot_inline.py &
 
    или настройте systemd-сервис.
 
